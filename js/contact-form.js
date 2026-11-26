@@ -34,6 +34,18 @@ function initContactForm() {
       if (first) first.focus();
       return;
     }
+    // إرسال الطلب إلى واتساب الزين برسالة جاهزة
+    var val = function (id) { return document.getElementById(id).value.trim(); };
+    var service = select.value ? select.options[select.selectedIndex].text : "غير محدد";
+    var text = [
+      "طلب جديد من موقع الزين",
+      "الاسم: " + val("name"),
+      "الجوال: " + val("phone"),
+      "البريد: " + val("email"),
+      "الخدمة: " + service,
+      "التفاصيل: " + val("message")
+    ].join("\n");
+    window.open("https://wa.me/966580414122?text=" + encodeURIComponent(text), "_blank", "noopener");
     formCard.classList.add("submitted");
   });
 
