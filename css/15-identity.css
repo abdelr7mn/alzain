@@ -19,7 +19,7 @@
 
 /* ---- صور الخدمات ---- */
 .service-row{grid-template-columns:7.5rem minmax(0,1fr) minmax(0,1.1fr) auto;}
-.service-art{width:7.5rem;height:auto;border-radius:12px;transition:transform .35s var(--ease);}
+.service-art{width:7.5rem;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:transform .35s var(--ease);}
 .service-row:hover .service-art{transform:rotate(-4deg) scale(1.08);}
 @media (max-width:820px){.service-row{grid-template-columns:1fr;}.service-art{width:6rem;margin-bottom:.5rem;}}
 
