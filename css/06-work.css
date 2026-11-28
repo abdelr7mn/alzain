@@ -4,7 +4,13 @@
 .filter-btn:hover{background:var(--concrete);}
 .filter-btn.active{background:var(--ink);color:var(--white);}
 
+.work-groups{display:grid;gap:3.5rem;}
+.work-group.hidden{display:none;}
+.work-group-title{display:flex;align-items:baseline;gap:.75rem;font-size:clamp(1.25rem,2.2vw,1.6rem);padding-bottom:.75rem;margin-bottom:1.5rem;border-bottom:2px solid var(--ink);}
+.work-group-count{font-size:.9rem;font-weight:500;color:var(--ink-soft);}
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.25rem 1.5rem;}
+.work-media.fit{background:#141414;}
+.work-media.fit img{object-fit:contain;}
 .work-card{cursor:pointer;display:block;}
 .work-card.hidden{display:none;}
 .work-media{position:relative;overflow:hidden;border-radius:var(--radius);background:var(--concrete-2);}
